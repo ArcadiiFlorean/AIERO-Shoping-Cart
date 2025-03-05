@@ -1,0 +1,420 @@
+/* Block info-bar */
+.info-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1893px;
+  background: #1f1f1f;
+  border-radius: 15px;
+  width: 1893px;
+  height: 38px;
+  padding: 0 38px;
+  margin-bottom: 9px;
+}
+
+/* Element info-bar__contact-info */
+.info-bar__contact-info ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.info-bar__list-item {
+  margin-right: 22px;
+  list-style: none;
+}
+
+.info-bar__label {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 193%;
+  color: #a1a1a1;
+}
+
+.info-bar__link {
+  color: white;
+  text-decoration: none;
+}
+
+.info-bar__link:hover {
+  text-decoration: underline;
+}
+
+/* Element info-bar__social-icons */
+.info-bar__span-social {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.info-bar__social-icon {
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.info-bar__social-icon:hover {
+  color: #f39c12;
+}
+
+/*nav-bar*/
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 36px 44px;
+  border: 1px solid #cacaca;
+  border-radius: 25px;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+.side-button {
+  width: 19.6px;
+  height: 19.5px;
+  background-image: url(./img/Side\ menu\ icon.svg);
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+}
+.nav-links li:first-child {
+  background: #1f1f1f;
+  border-radius: 10px;
+  padding: 6px 31px 7px 22px;
+  cursor: pointer;
+}
+.nav-links li:first-child a {
+  color: #ffffff;
+  text-align: center;
+}
+.nav-links li:first-child:hover {
+  background: #3f3f3f; /* Schimbă fundalul la alb */
+}
+
+.nav-item {
+  list-style: none;
+}
+.nav-item a {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 193%;
+  text-transform: uppercase;
+  color: #333;
+  text-decoration: none;
+}
+
+.action-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.action-item {
+  list-style: none;
+}
+.action-item:nth-child(2) {
+  margin-right: 15px; /* Ajustează distanța pentru elementul "basket" */
+}
+
+.action-button {
+  width: 188px;
+  height: 60px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 169%;
+  text-align: center;
+  color: #333;
+  border-radius: 50px;
+  border: 5px solid transparent; /* Creează un border transparent */
+  background-image: linear-gradient(
+    to right,
+    #45d0bd,
+    #44b6e9
+  ); /* Gradientul liniar între cele două culori */
+  background-origin: border-box; /* Aplică gradientul pe border */
+  background-clip: content-box, border-box; /* Asigură-te că gradientul se aplică doar pe border */
+  cursor: pointer;
+  transition: background-image 0.5s ease, color 0.5s ease;
+}
+.action-button:hover {
+  background-image: linear-gradient(
+    to right,
+
+    #3fb8f0,
+    #3be0ca
+  );
+  color: white;
+}
+/* Stilizează SVG-ul */
+.header__icon {
+  width: 10px; /* Poți ajusta lățimea */
+  height: 10px; /* Poți ajusta înălțimea */
+  margin-left: 5px; /* Spațiu între text și iconiță */
+  vertical-align: middle; /* Aliniere verticală în raport cu textul */
+  transition: transform 0.3s ease; /* Adăugăm un efect de tranziție pentru animare */
+}
+
+.nav-item:hover .header__icon {
+  transform: translateX(
+    5px
+  ); /* Poți adăuga un efect la hover, de exemplu, mișcarea iconiței */
+}
+
+/*HERO-SECTION*/
+
+.hero {
+  border-radius: 25px;
+  background: linear-gradient(135deg, #45d0bd 0%, #44b6e9 100%);
+}
+
+.hero-title {
+  font-size: 5rem;
+}
+
+/* .patrat{
+position: relative;
+top: 550px;
+  border-radius: 25px 25px 25px 7px;
+width: 309px;
+height: 147px;
+background: #fefeff;
+} */
+/*table*/
+
+table {
+  width: 100%;
+  margin-bottom: 89px;
+}
+
+th,
+td {
+  width: 20%;
+}
+
+.quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quantity button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.remove {
+  color: red;
+  cursor: pointer;
+}
+.shoping-section {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1341px;
+}
+.cart__product-info {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  max-width: 1341px;
+}
+
+.cart {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart__product-name {
+  margin-bottom: 10px;
+}
+
+.cart__star {
+  cursor: pointer;
+  color: #ccc;
+  font-size: 30px;
+}
+.cart__star.active {
+  color: gold;
+}
+
+.cart__cell {
+  padding: 15px;
+  text-align: center; /* Aliniere la centru */
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 194%;
+  color: #111;
+}
+
+.cart__product-details {
+  min-width: 241px;
+  margin-right: 38px;
+  text-align: left;
+}
+
+.cart__quantity {
+  font-size: 1rem;
+  font-weight: bold;
+  flex: 1;
+  text-align: center;
+  border: 1px soli;
+}
+
+.card__cell__btn {
+  border: 1px solid #333;
+  border-radius: 10px;
+  width: 102px;
+  height: 50px;
+  margin-left: 100px;
+  padding: 15px;
+}
+
+.cart__quantity {
+  padding: 0 5px;
+  font-size: 20px;
+}
+
+.cart__btn {
+  border: none;
+  background: none;
+  font-size: 30px;
+
+  border-radius: 10px;
+
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.cart__button-remove {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: red;
+}
+
+/*butons coupon-send-update*/
+.coupon-send-update {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1341px;
+  margin: 0 auto;
+}
+
+#coupon-code {
+  border: 1px solid #adadad;
+  border-radius: 20px;
+  width: 307px;
+  height: 50px;
+  background: #fff;
+}
+input::placeholder {
+  text-align: center;
+  font-style: italic;
+  color: #888;
+}
+
+#send-message {
+  width: 171px;
+  height: 50px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 193%;
+  letter-spacing: 0.01em;
+  border: none;
+  border-radius: 15px;
+  color: #333;
+  background: linear-gradient(to right, #45d0bd, #44b6e9);
+  transition: background-image 0.5s ease, color 0.5s ease;
+  cursor: pointer;
+}
+
+#send-message:hover {
+  background: linear-gradient(to right, #44b6e9, #45d0bd);
+  color: white;
+}
+
+#update-card {
+  width: 171px;
+  height: 50px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 193%;
+  letter-spacing: 0.01em;
+  border: none;
+  border-radius: 15px;
+  color: #333;
+  background: linear-gradient(to right, #45d0bd, #44b6e9);
+  transition: background-image 0.5s ease, color 0.5s ease;
+  cursor: pointer;
+}
+
+#update-card:hover {
+  background: linear-gradient(to right, #44b6e9, #45d0bd);
+  color: white;
+}
+
+/*CARD_SUMARY*/
+.cart-summary {
+  display: flex;
+  margin: 93px 275px 0 auto;
+  border-radius: 25px;
+  width: 305px;
+  height: 350px;
+  background: #f0f2f4;
+}
+
+.cart-sumary-content {
+  padding: 29px 40px 42px 47px;
+}
+#card,
+#subtotal,
+#total {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 200%;
+  letter-spacing: -0.03em;
+  color: #111;
+}
+#total {
+  margin-bottom: 26px;
+}
+.checkout-btn {
+  border: 1px solid #1f1f1f;
+  border-radius: 15px;
+  width: 215px;
+  height: 50px;
+  background: #1f1f1f;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 193%;
+  color: #fff;
+  transition: 0.5s ease, color 0.5s ease;
+}
+.checkout-btn:hover {
+  background-color: green;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}

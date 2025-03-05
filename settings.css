@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1950px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+:root {
+  --font-family: "Sora", serif;
+  --font-secondary: "Manrope", serif;
+}
