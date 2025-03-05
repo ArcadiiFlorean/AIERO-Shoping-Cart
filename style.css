@@ -184,7 +184,7 @@
 
 .hero-title {
   font-size: 5rem;
-}
+} 
 
 /* .patrat{
 position: relative;
@@ -196,9 +196,11 @@ background: #fefeff;
 } */
 /*table*/
 
+
 table {
   width: 100%;
   margin-bottom: 89px;
+
 }
 
 th,
