@@ -177,14 +177,14 @@
 
 /*HERO-SECTION*/
 
-.hero {
+/* .hero {
   border-radius: 25px;
   background: linear-gradient(135deg, #45d0bd 0%, #44b6e9 100%);
 }
 
 .hero-title {
   font-size: 5rem;
-}
+} */
 
 /* .patrat{
 position: relative;
@@ -195,7 +195,10 @@ height: 147px;
 background: #fefeff;
 } */
 /*table*/
-
+.hero{
+  display: flex;
+  justify-content: center;
+}
 table {
   width: 100%;
   margin-bottom: 89px;
