@@ -89,3 +89,28 @@ function updateCartTotal() {
 
 // Call the updateCartTotal initially to set the correct values on page load
 updateCartTotal();
+
+
+//DROP DOWN
+// document.addEventListener("DOMContentLoaded", function () {
+//   const homeLink = document.getElementById("home-link");
+//   const dropdownMenu = document.querySelector(".dropdown-menu");
+
+//   homeLink.addEventListener("mouseover", function () {
+//     dropdownMenu.style.display = "block";
+//   });
+
+//   homeLink.addEventListener("mouseleave", function () {
+//     setTimeout(() => {
+//       dropdownMenu.style.display = "none";
+//     }, 500);
+//   });
+
+//   dropdownMenu.addEventListener("mouseover", function () {
+//     dropdownMenu.style.display = "block";
+//   });
+
+//   dropdownMenu.addEventListener("mouseleave", function () {
+//     dropdownMenu.style.display = "none";
+//   });
+// });
