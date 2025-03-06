@@ -3,10 +3,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1893px;
+
   background: #1f1f1f;
   border-radius: 15px;
-  width: 1893px;
+  width: auto;
   height: 38px;
   padding: 0 38px;
   margin-bottom: 9px;
@@ -780,4 +780,81 @@ textarea {
 .footer__allrights,
 .footer__terms {
   margin: 0;
+}
+/*MEDIA QUERY*/
+img {
+  max-width: 100%;
+  height: auto; /* Păstrează raportul de aspect al imaginii */
+}
+
+/* Stiluri generale pentru ecrane mari (1950px și mai mari) */
+
+/* Media query pentru ecrane mai mici de 1950px */
+
+@media (max-width: 1950px) {
+  .container {
+    width: 100%; /* Ajustează lățimea pentru ecrane mai mici */
+  }
+  .info-bar {
+    max-width: 1950px;
+  }
+  .nav-bar {
+    display: flex;
+  }
+}
+
+@media (max-width: 1600px) {
+  .container {
+    width: 90%; /* Ajustează lățimea pentru ecrane și mai mici */
+
+  }
+  .info-bar {
+    /* max-width: 1600px; */
+  }
+  .nav-links{
+gap: 20px;
+  }
+}
+
+/* Media query pentru ecrane mai mici de 1200px */
+@media (max-width: 1200px) {
+  .container {
+    width: 90%; /* Ajustează lățimea pentru ecrane și mai mici */
+  }
+  .info-bar {
+    max-width: 1200px;
+  }
+  .nav-links{
+    display: none;
+  }
+}
+
+/* Media query pentru ecrane mai mici de 992px */
+@media (max-width: 992px) {
+  .container {
+    width: 80%; /* Ajustează lățimea pentru tablete și dispozitive mai mici */
+  }
+  .info-bar {
+    max-width: 992px;
+  }
+}
+
+/* Media query pentru ecrane mai mici de 768px */
+@media (max-width: 768px) {
+  .container {
+    width: 100%; /* Ajustează lățimea pentru telefoane mobile */
+  }
+  .info-bar {
+    max-width: 768px;
+  }
+}
+
+/* Media query pentru ecrane mai mici de 480px */
+@media (max-width: 480px) {
+  .container {
+    width: 100%; /* Asigură-te că ocupă întreaga lățime a ecranului */
+  }
+  .info-bar {
+    max-width: 480px;
+  }
 }
