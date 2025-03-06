@@ -163,11 +163,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
- 
 }
 
-.action-links  i {
-margin-right: 5px;
+.action-links i {
+  margin-right: 5px;
+  cursor: pointer;
 }
 
 .action-item {
@@ -178,18 +178,14 @@ margin-right: 5px;
 }
 /*search button*/
 
-.search-static{
+.search-static {
   width: 200px;
-
-
 }
 .searchbar {
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .search-form {
@@ -208,7 +204,7 @@ margin-right: 5px;
   width: 3rem;
   height: 3rem;
   border-radius: 999px;
-  background-color: #059669;
+  background-color: #000000;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -263,7 +259,6 @@ margin-right: 5px;
   opacity: 0;
 }
 
-
 .action-button {
   width: 188px;
   height: 60px;
@@ -296,39 +291,17 @@ margin-right: 5px;
 }
 /* Stilizează SVG-ul */
 .header__icon {
-  width: 10px; /* Poți ajusta lățimea */
-  height: 10px; /* Poți ajusta înălțimea */
-  margin-left: 5px; /* Spațiu între text și iconiță */
-  vertical-align: middle; /* Aliniere verticală în raport cu textul */
-  transition: transform 0.3s ease; /* Adăugăm un efect de tranziție pentru animare */
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
 }
 
 .nav-item:hover .header__icon {
-  transform: translateX(
-    5px
-  ); /* Poți adăuga un efect la hover, de exemplu, mișcarea iconiței */
+  transform: translateX(5px);
 }
 
-/*HERO-SECTION*/
-
-/* .hero {
-  border-radius: 25px;
-  background: linear-gradient(135deg, #45d0bd 0%, #44b6e9 100%);
-}
-
-.hero-title {
-  font-size: 5rem;
-} */
-
-/* .patrat{
-position: relative;
-top: 550px;
-  border-radius: 25px 25px 25px 7px;
-width: 309px;
-height: 147px;
-background: #fefeff;
-} */
-/*table*/
 .hero {
   display: flex;
   justify-content: center;

@@ -96,30 +96,6 @@ function updateCartTotal() {
 // Call the updateCartTotal initially to set the correct values on page load
 updateCartTotal();
 
-//DROP DOWN
-// document.addEventListener("DOMContentLoaded", function () {
-//   const homeLink = document.getElementById("home-link");
-//   const dropdownMenu = document.querySelector(".dropdown-menu");
-
-//   homeLink.addEventListener("mouseover", function () {
-//     dropdownMenu.style.display = "block";
-//   });
-
-//   homeLink.addEventListener("mouseleave", function () {
-//     setTimeout(() => {
-//       dropdownMenu.style.display = "none";
-//     }, 500);
-//   });
-
-//   dropdownMenu.addEventListener("mouseover", function () {
-//     dropdownMenu.style.display = "block";
-//   });
-
-//   dropdownMenu.addEventListener("mouseleave", function () {
-//     dropdownMenu.style.display = "none";
-//   });
-// });
-
 // SEARCH
 // Afișează sau ascunde spațiul de căutare la click pe iconul de căutare
 
@@ -138,33 +114,33 @@ function closeSearch() {
 }
 
 // search-button
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   const toggleSearch = () => {
-    const searchForm = document.querySelector('.search-form');
-    const searchButton = document.querySelector('.search-button');
-    const searchInput = document.querySelector('.search-input');
-    const searchClose = document.querySelector('.search-close');
+    const searchForm = document.querySelector(".search-form");
+    const searchButton = document.querySelector(".search-button");
+    const searchInput = document.querySelector(".search-input");
+    const searchClose = document.querySelector(".search-close");
 
     if (!searchForm || !searchButton || !searchInput || !searchClose) return;
 
     // Clic pe butonul de căutare
-    searchButton.addEventListener('click', () => {
-      searchForm.classList.toggle('active-search');
+    searchButton.addEventListener("click", () => {
+      searchForm.classList.toggle("active-search");
       searchInput.focus();
     });
 
     // Clic pe butonul de închidere (X)
-    searchClose.addEventListener('click', () => {
-      searchForm.classList.remove('active-search');
-      searchInput.value = ''; // Șterge textul când se închide căutarea
+    searchClose.addEventListener("click", () => {
+      searchForm.classList.remove("active-search");
+      searchInput.value = ""; // Șterge textul când se închide căutarea
     });
 
     // Apăsarea tastei "Enter"
-    searchInput.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') {
+    searchInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
         e.preventDefault();
-        searchInput.value = ''; // Șterge textul după apăsarea Enter
-        searchForm.classList.remove('active-search');
+        searchInput.value = ""; // Șterge textul după apăsarea Enter
+        searchForm.classList.remove("active-search");
       }
     });
   };
