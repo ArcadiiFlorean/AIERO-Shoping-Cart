@@ -16,6 +16,16 @@
       href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/YOUR_KIT_CODE.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./settings.css" />
@@ -253,16 +263,29 @@
             </li>
           </ul>
           <ul class="action-links">
-            <li class="action-item dropdown">
-              <a href="#basket" class="action-link">
-                <img src="./imag/basket_icon.svg" alt="basket" />
-              </a>
-            </li>
-            <li class="action-item">
-              <a href="#search" class="action-link">
-                <img src="./imag/search.svg" alt="basket" />
-              </a>
-            </li>
+             <i class="fa-solid fa-cart-shopping fa-xl" ></i>
+            <div class="search-static">
+           
+              <div class="searchbar">
+                
+                <form action="" class="search-form">
+
+                 
+                  <input
+                    type="text"
+                    placeholder="Type to search"
+                    class="search-input"
+                  />   
+
+                  <div class="search-button">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <i class="fa-solid fa-xmark search-close"></i>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- Spațiul de căutare care va fi ascuns la început -->
+
             <button
               class="action-button"
               type="button"

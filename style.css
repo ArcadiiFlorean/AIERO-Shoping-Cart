@@ -131,12 +131,10 @@
 }
 .dropdown-menu li a {
   color: #ffffff;
-  font-weight: 100;
+  font-weight: 200;
 
   line-height: 265%;
   font-family: var(--font-family);
-
-
 }
 .dropdown-menu li a:hover {
   color: #f14f44;
@@ -165,7 +163,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+ 
+}
+
+.action-links  i {
+margin-right: 5px;
 }
 
 .action-item {
@@ -174,6 +176,93 @@
 .action-item:nth-child(2) {
   margin-right: 15px; /* Ajustează distanța pentru elementul "basket" */
 }
+/*search button*/
+
+.search-static{
+  width: 200px;
+
+
+}
+.searchbar {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.search-form {
+  position: relative;
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 999px;
+  background-color: white;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  padding: 0.75rem;
+  margin: 0 0.5rem;
+  transition: width 0.5s;
+}
+
+.search-button {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 999px;
+  background-color: #059669;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.search-icon,
+.search-close {
+  position: absolute;
+  font-size: 1.25rem;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.search-close {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.search-input {
+  background-color: white;
+  border: none;
+  outline: none;
+  width: 65%;
+  height: 100%;
+  border-radius: 999px;
+  padding-left: 1rem;
+  font-size: small;
+  pointer-events: none;
+}
+
+.active-search {
+  max-width: 100%;
+  width: 14rem;
+}
+.active-search .search-button {
+  left: calc(100% - 2rem);
+}
+.active-search .search-input {
+  pointer-events: initial;
+}
+
+.active-search .search-close {
+  opacity: 1;
+  pointer-events: initial;
+}
+.active-search .search-icon {
+  opacity: 0;
+}
+
 
 .action-button {
   width: 188px;
