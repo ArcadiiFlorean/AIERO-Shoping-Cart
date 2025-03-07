@@ -90,9 +90,9 @@
   gap: 40px;
 }
 
-.hidden {
+/* .hidden {
   display: none;
-}
+} */
 
 .nav-links li:first-child {
   background: #1f1f1f;
@@ -137,7 +137,6 @@
 .dropdown-menu li a {
   color: #ffffff;
   font-weight: 200;
-
   line-height: 265%;
   font-family: var(--font-family);
 }
@@ -793,31 +792,6 @@ img {
 }
 /*//////////////////////////////////////////////////////////////////////////////////*/
 
-.dropdown-menu {
-  list-style: none;
-  padding-left: 180px;
-  margin: 0;
-  display: none;
-}
-
-.dropdown-menu li {
-  padding: 5px 0;
-}
-
-.dropdown-menu ul {
-  display: flex;
-  padding: 5px 0;
-  margin-left: 550px;
-}
-.dropdown-menu a {
-  text-decoration: none;
-  color: #555;
-}
-
-.nav-item.active .dropdown-menu {
-  display: block;
-}
-
 /*////////////////////////////////////////////////////////////////////////////////////////*/
 
 /* Stiluri generale pentru ecrane mari (1950px și mai mari) */
@@ -946,7 +920,6 @@ img {
 
 /* Media query pentru ecrane mai mici de 480px */
 
-
 #send-message svg,
 #update-card svg {
   margin-left: 10px;
@@ -996,9 +969,8 @@ img {
   }
 
   .coupon-send-update {
-   display: flex;
-  flex-direction: column;
-
+    display: flex;
+    flex-direction: column;
   }
 
   #coupon-code {
@@ -1012,11 +984,11 @@ img {
     margin-bottom: 10px;
   }
 
-  .contact-us__details{
+  .contact-us__details {
     display: flex;
     flex-direction: column;
   }
-  .footer__content{
+  .footer__content {
     display: flex;
     flex-direction: column;
   }
@@ -1047,25 +1019,46 @@ img {
     display: flex;
     flex-direction: column;
   }
-.contact-us__title{
-  max-width: 350px;
-}
-.form__content {
-  width: 303px;
-}
-#form__content{
-  width: 280px;
+  .contact-us__title {
+    max-width: 350px;
+  }
+  .form__content {
+    width: 303px;
+  }
+  #form__content {
+    width: 280px;
+  }
+
+  .colspan {
+    display: none;
+  }
+
+  .cart-summary {
+    margin: 0;
+  }
 }
 
+@media (max-width: 375px) {
+  .container {
+    width: 90%;
+  }
+  .info-bar{
+    height: 70px;
+    text-align: center;
+  }
 
-.colspan{
+  .info-bar__list{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-bar__label{
   display: none;
-
+  }
+  .hero-img{
+    display: none;
+  }
+  .contact-us__content{
+    gap: 10px;
+  }
 }
-
-.cart-summary{
-  margin: 0;
-}
-
-} 
-

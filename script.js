@@ -162,9 +162,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //side-button
 
-document.querySelectorAll('.nav-item > a').forEach(item => {
-  item.addEventListener('click', function () {
-    const parent = this.parentElement;
-    parent.classList.toggle('active');
-  });
-});
+// document.querySelectorAll('.nav-item > a').forEach(item => {
+//   item.addEventListener('click', function () {
+//     const parent = this.parentElement;
+//     parent.classList.toggle('active');
+//   });
+// });
