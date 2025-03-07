@@ -1050,7 +1050,11 @@ img {
 .contact-us__title{
   max-width: 350px;
 }
-  .shoping-section {
-  }
+.form__content {
+  width: 303px;
+}
+#form__content{
+  width: 280px;
+}
 } 
 
