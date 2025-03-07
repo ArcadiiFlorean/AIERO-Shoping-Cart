@@ -89,6 +89,11 @@
   justify-content: center;
   gap: 40px;
 }
+
+.hidden {
+  display: none;
+}
+
 .nav-links li:first-child {
   background: #1f1f1f;
   border-radius: 10px;
@@ -786,6 +791,34 @@ img {
   max-width: 100%;
   height: auto; /* Păstrează raportul de aspect al imaginii */
 }
+/*//////////////////////////////////////////////////////////////////////////////////*/
+
+.dropdown-menu {
+  list-style: none;
+  padding-left: 180px;
+  margin: 0;
+  display: none;
+}
+
+.dropdown-menu li {
+  padding: 5px 0;
+}
+
+.dropdown-menu ul {
+  display: flex;
+  padding: 5px 0;
+  margin-left: 550px;
+}
+.dropdown-menu a {
+  text-decoration: none;
+  color: #555;
+}
+
+.nav-item.active .dropdown-menu {
+  display: block;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////*/
 
 /* Stiluri generale pentru ecrane mari (1950px și mai mari) */
 
@@ -803,16 +836,45 @@ img {
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1660px) {
   .container {
     width: 90%; /* Ajustează lățimea pentru ecrane și mai mici */
+  }
+  .line {
+    display: none;
+  }
 
+  .contact__content__bottom {
+    margin: 0;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hidden {
+    display: block !important; /* Asigură-te că elementele ascunse devin vizibile */
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@media (max-width: 1500px) {
+  .container {
+    width: 90%; /* Ajustează lățimea pentru ecrane și mai mici */
   }
   .info-bar {
     /* max-width: 1600px; */
   }
-  .nav-links{
-gap: 20px;
+
+  .nav-links {
+    display: none;
+  }
+  .nav-links {
+    gap: 20px;
+  }
+
+  .contact-us__mistake {
+    width: 95%;
   }
 }
 
@@ -824,8 +886,21 @@ gap: 20px;
   .info-bar {
     max-width: 1200px;
   }
-  .nav-links{
+  .nav-links {
     display: none;
+  }
+  .form__content {
+    width: 474px;
+    height: 634px;
+  }
+
+  .contact__content__bottom {
+    gap: 0;
+  }
+
+  .contact-us__mistake {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -836,6 +911,26 @@ gap: 20px;
   }
   .info-bar {
     max-width: 992px;
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+  }
+  .contact__content__bottom {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-us__content {
+    display: grid;
+    place-items: center;
+  }
+
+  .contact-us__title,
+  .contact-us__details,
+  .contact-us__description {
+    max-width: 1000px;
+    text-align: center;
   }
 }
 
@@ -850,11 +945,112 @@ gap: 20px;
 }
 
 /* Media query pentru ecrane mai mici de 480px */
+
+
+#send-message svg,
+#update-card svg {
+  margin-left: 10px;
+  width: 12px;
+  height: 11px;
+}
+
+/* Media Queries pentru mobil */
+@media (max-width: 768px) {
+  .cart__header {
+    display: none;
+  }
+
+  .cart__row {
+    flex-direction: column;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .cart__cell {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .cart__product-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart__product-img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    margin-left: 144px;
+  }
+  .cart__product-details {
+    margin-left: 114px;
+  }
+  .cart__rating {
+    margin-top: 5px;
+  }
+
+  .cart__quantity-btn {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .coupon-send-update {
+   display: flex;
+  flex-direction: column;
+
+  }
+
+  #coupon-code {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #send-message,
+  #update-card {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .contact-us__details{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__content{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 480px) {
   .container {
-    width: 100%; /* Asigură-te că ocupă întreaga lățime a ecranului */
+    width: 100%;
   }
   .info-bar {
     max-width: 480px;
+    height: 80px;
   }
+
+  .search-static {
+    margin-top: 20px;
+  }
+  .nav-items {
+    margin-bottom: 40px;
+  }
+
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+  }
+  .action-links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+.contact-us__title{
+  max-width: 350px;
 }
+  .shoping-section {
+  }
+} 
+

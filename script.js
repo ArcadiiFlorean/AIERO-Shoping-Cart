@@ -148,3 +148,23 @@ document.addEventListener("DOMContentLoaded", () => {
   // Apelează funcția pentru a activa căutarea după încărcarea paginii
   toggleSearch();
 });
+
+//side-button 
+document.addEventListener("DOMContentLoaded", function () {
+  const menuButton = document.querySelector(".side-button");
+  const navLinks = document.querySelector(".nav-links");
+
+  menuButton.addEventListener("click", function () {
+    navLinks.classList.toggle("hidden");
+  });
+});
+
+
+//side-button
+
+document.querySelectorAll('.nav-item > a').forEach(item => {
+  item.addEventListener('click', function () {
+    const parent = this.parentElement;
+    parent.classList.toggle('active');
+  });
+});
