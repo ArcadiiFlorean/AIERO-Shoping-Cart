@@ -1056,5 +1056,16 @@ img {
 #form__content{
   width: 280px;
 }
+
+
+.colspan{
+  display: none;
+
+}
+
+.cart-summary{
+  margin: 0;
+}
+
 } 
 
