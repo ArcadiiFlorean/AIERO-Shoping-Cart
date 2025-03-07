@@ -790,11 +790,7 @@ img {
   max-width: 100%;
   height: auto; /* Păstrează raportul de aspect al imaginii */
 }
-/*//////////////////////////////////////////////////////////////////////////////////*/
 
-/*////////////////////////////////////////////////////////////////////////////////////////*/
-
-/* Stiluri generale pentru ecrane mari (1950px și mai mari) */
 
 /* Media query pentru ecrane mai mici de 1950px */
 
@@ -826,11 +822,11 @@ img {
     display: none;
   }
 
-  .hidden {
-    display: block !important; /* Asigură-te că elementele ascunse devin vizibile */
+  /* .hidden {
+    display: block !important; 
     visibility: visible;
     opacity: 1;
-  }
+  } */
 }
 @media (max-width: 1500px) {
   .container {
