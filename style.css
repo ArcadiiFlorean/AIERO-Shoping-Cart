@@ -791,9 +791,12 @@ img {
   height: auto; /* Păstrează raportul de aspect al imaginii */
 }
 
-
 /* Media query pentru ecrane mai mici de 1950px */
 
+@media (min-width: 1950px) {
+
+
+}
 @media (max-width: 1950px) {
   .container {
     width: 100%; /* Ajustează lățimea pentru ecrane mai mici */
@@ -804,6 +807,8 @@ img {
   .nav-bar {
     display: flex;
   }
+
+
 }
 
 @media (max-width: 1660px) {
@@ -821,7 +826,7 @@ img {
   .nav-links {
     display: none;
   }
-
+ 
   /* .hidden {
     display: block !important; 
     visibility: visible;
@@ -1032,29 +1037,40 @@ img {
   .cart-summary {
     margin: 0;
   }
+  .info-bar__label {
+    display: none;
+  }
+
+  .info-bar__list {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 375px) {
   .container {
     width: 90%;
   }
-  .info-bar{
+  .info-bar {
     height: 70px;
     text-align: center;
   }
 
-  .info-bar__list{
+  .info-bar__list {
     display: flex;
     flex-direction: column;
   }
 
-  .info-bar__label{
-  display: none;
-  }
-  .hero-img{
+  .info-bar__label {
     display: none;
   }
-  .contact-us__content{
+  .hero-img {
+    display: none;
+  }
+  .contact-us__content {
     gap: 10px;
+  }
+  .info-bar__label {
+    display: none;
   }
 }
